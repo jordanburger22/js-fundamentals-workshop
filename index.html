@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Fundamentals</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <h1 id="h1">Javascript Fundamentals</h1>
+    <p>Welcome to the JavaScript fundamentals workshop! In this workshop, we'll cover:</p>
+    <ul>
+        <li>Data Types</li>
+        <li>Const vs Let</li>
+        <li>Conditional Statements</li>
+        <li>Loops</li>
+        <li>Functions</li>
+        <li>Document Object Model (DOM) Manipulation</li>
+        <li>Events</li>
+    </ul>
+    <h2 class="data">Data Types</h2>
+    <p>JavaScript has several data types:</p>
+    <div class="code-block">
+        const number = 10;<br>
+        const string = "Hello World";<br>
+        const boolean = true;<br>
+        const array = [1, 2, 3];<br>
+        const object = { name: "John", age: 30 };<br>
+        const nullValue = null;<br>
+        const undefinedValue = undefined;
+    </div>
+
+    <h2>Const vs Let</h2>
+    <p><code>const</code> and <code>let</code> are used to declare variables in JavaScript:</p>
+    <div class="code-block">
+        const numArray = [1, 2, 3, 4, 5];<br>
+        numArray.push(6); // This is allowed<br>
+        // numArray = [1, 2, 3, 4, 5, 6]; // This will cause an error
+    </div>
+
+    <h2>Conditional Statements</h2>
+    <p>Conditional statements control the flow of your program:</p>
+    <div class="code-block">
+        if (number > 5) {<br>
+        &nbsp;&nbsp;console.log("number is greater than 5");<br>
+        } else if (number === 5) {<br>
+        &nbsp;&nbsp;console.log("number is equal to 5");<br>
+        } else {<br>
+        &nbsp;&nbsp;console.log("number is less than 5");<br>
+        }
+    </div>
+
+    <h2>Loops</h2>
+    <p>Loops are used to repeat a block of code:</p>
+    <div class="code-block">
+        for (let i = 0; i < 5; i++) {<br>
+            &nbsp;&nbsp;console.log(i);<br>
+            }
+    </div>
+
+    <h2>Functions</h2>
+    <p>Functions are blocks of code designed to perform a particular task:</p>
+    <div class="code-block">
+        function greet() {<br>
+        &nbsp;&nbsp;console.log("Hello World");<br>
+        }<br>
+        greet();<br><br>
+        const greet2 = () => {<br>
+        &nbsp;&nbsp;console.log("Hello World");<br>
+        };<br>
+        greet2();
+    </div>
+
+    <h2>Document Object Model (DOM) Manipulation</h2>
+    <p>DOM manipulation allows you to interact with the HTML:</p>
+    <div class="code-block">
+        const h1 = document.getElementById("h1");<br>
+        h1.textContent = "Hello World";<br>
+        h1.style.color = "red";<br><br>
+        const button = document.createElement("button");<br>
+        button.textContent = "Click me";<br>
+        document.body.appendChild(button);
+    </div>
+
+    <h2>Events</h2>
+    <p>Events allow you to execute code when a specific action occurs:</p>
+    <div class="code-block">
+        button.addEventListener('click', function() {<br>
+        &nbsp;&nbsp;document.body.style.backgroundColor = "black";<br>
+        &nbsp;&nbsp;document.body.style.color = "white";<br>
+        });
+    </div>
+</body>
+
+</html>
